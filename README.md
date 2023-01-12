@@ -1,6 +1,6 @@
 ## What Is This?
 
-This is an example repo corresponding to multiple lessons within the LearnHowToProgram.com walkthrough on creating an ASP.NET Core API in [Section 6: Building an API](https://www.learnhowtoprogram.com/c-and-net/building-an-api).. Later we create [an ASP.NET Core MVC app](https://github.com/epicodus-lessons/section-6-cretaceous-park-client-csharp-net6).
+This is an example repo corresponding to multiple lessons within the LearnHowToProgram.com walkthrough on creating an ASP.NET Core API in [Section 6: Building an API](https://www.learnhowtoprogram.com/c-and-net/building-an-api). Later we create [an ASP.NET Core MVC app](https://github.com/epicodus-lessons/section-6-cretaceous-park-client-csharp-net6).
 
 This project is called the "Cretaceous Park API", while the client is called the "Cretaceous Park Client".
 
