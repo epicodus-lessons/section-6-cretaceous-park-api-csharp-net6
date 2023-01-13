@@ -81,7 +81,41 @@ DELETE http://localhost:5000/api/animals/{id}
 
 Note: `{id}` is a variable and it should be replaced with the id number of the animal you want to GET, PUT, or DELETE.
 
-#### Additional Requirements for POST
+#### Optional Query String Parameters for GET Request
+
+GET requests to `http://localhost:5000/api/animals/` can optionally include query strings to filter or search animals.
+
+| Parameter   | Type        |  Required    | Description |
+| ----------- | ----------- | -----------  | ----------- |
+| species     | String      | not required | Returns animals with a matching species value |
+| name        | String      | not required | Returns animals with a matching name value |
+| minimumAge  | Number      | not required | Returns animals that have an age value that is greater than or equal to the specified minimumAge value |
+
+The following query will return all animals with a species value of "Dinosaur":
+
+```
+GET http://localhost:5000/api/animals?species=dinosaur
+```
+
+The following query will return all animals with the name "Matilda":
+
+```
+GET http://localhost:5000/api/animals?name=matilda
+```
+
+The following query will return all animals with an age of 10 or older:
+
+```
+GET http://localhost:5000/api/animals?minimumAge=10
+```
+
+You can include multiple query strings by separating them with an `&`:
+
+```
+GET http://localhost:5000/api/animals?species=dinosaur&minimumAge=10
+```
+
+#### Additional Requirements for POST Request
 
 When making a POST request to `http://localhost:5000/api/animals/`, you need to include a **body**. Here's an example body in JSON:
 
@@ -93,7 +127,7 @@ When making a POST request to `http://localhost:5000/api/animals/`, you need to 
 }
 ```
 
-#### Additional Requirements for PUT
+#### Additional Requirements for PUT Request
 
 When making a PUT request to `http://localhost:5000/api/animals/{id}`, you need to include a **body** that includes the animal's `animalId` property. Here's an example body in JSON:
 
